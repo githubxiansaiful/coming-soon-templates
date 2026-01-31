@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coming Soon — Website</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #0b0e17;
+      --bg-soft: #0f1324;
+      --text-main: #ffffff;
+      --text-muted: #9aa3c7;
+      --accent: #7f7cff;
+      --accent-soft: rgba(127,124,255,0.15);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(1200px 600px at 20% 10%, rgba(127,124,255,0.12), transparent 40%),
+        radial-gradient(1000px 500px at 80% 80%, rgba(127,124,255,0.08), transparent 45%),
+        var(--bg);
+      color: var(--text-main);
+      font-family: 'Inter', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 900px;
+      padding: 80px 24px;
+      text-align: center;
+    }
+
+    .brand {
+      font-size: 14px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(42px, 6vw, 72px);
+      font-weight: 600;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+
+    h1 span {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .subtitle {
+      max-width: 620px;
+      margin: 0 auto 48px;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--text-muted);
+    }
+
+    .divider {
+      width: 80px;
+      height: 1px;
+      margin: 0 auto 48px;
+      background: linear-gradient(
+        to right,
+        transparent,
+        var(--accent),
+        transparent
+      );
+      opacity: 0.6;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px 32px;
+      border-radius: 999px;
+      background: transparent;
+      border: 1px solid var(--accent-soft);
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    .cta:hover {
+      background: var(--accent-soft);
+      transform: translateY(-2px);
+    }
+
+    footer {
+      margin-top: 72px;
+      font-size: 13px;
+      color: var(--text-muted);
+      opacity: 0.8;
+    }
+
+    @media (max-width: 480px) {
+      .subtitle {
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <div class="brand">Website</div>
+
+    <h1>
+      Something <span>beautiful</span><br />
+      is coming soon.
+    </h1>
+
+    <p class="subtitle">
+      We’re crafting a refined digital experience where design meets purpose
+      and every detail matters. Stay tuned — the next chapter is almost here.
+    </p>
+
+    <div class="divider"></div>
+
+    <a href="mailto:hello@website.com" class="cta">
+      Get in touch
+    </a>
+
+    <footer>
+      © 2026 website. All rights reserved.
+    </footer>
+  </main>
+
+</body>
+</html>
